@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav>
+        <input type="checkbox"  id="cheak">
+<label for="cheak" class="cheakbtn">
+    <i class="fa-solid fa-bars"></i>
+</label>
+<label class="logo">Neophet Conception</label>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">SignUp</a></li>
+            <li><a href="feedback.html">Contact</a></li>
+    </nav>
+    <div class="logcontainer">
+        <br>
+        <br>
+        <br>
+        <div class="txt">
+            Sign Up To Make Your Experience Better!
+            </div>
+    <button id="log" onclick="openlogin()" class="btn">SIGN UP</button>
+        </div>
+        <div class="login" id="signin">
+            <br>
+            <br>
+            <p class="p1">
+                Username 
+                <br>
+                <input type="text" placeholder="Username" class="user">
+            </p>
+            <p class="p1">
+                Name
+                <br>
+                <input type="text" placeholder="Name" class="user">
+            </p>
+            <p class="p2">
+                Password
+                <br>
+                <input type="password" placeholder="Password" class="user">
+            </p>
+            <p class="p2">
+                Confirm-Password
+                <br>
+                <input type="password" placeholder="Confirm-Password" class="user">
+            </p>
+            <br>
+            <center>
+            <button type="reset" class="mbtn">Sign Up</button>
+            <br>
+            <button type="button" class="mbtn" onclick="closelogin()">Close</button>
+        </center>
+        </div>
+    
+        <script>
+            let log = document.getElementById("log");
+function openlogin()
+{
+    signin.classList.add("open-login");
+    log.classList.add("rem-btn");
+}
+function closelogin()
+{
+    signin.classList.remove("open-login");
+    log.classList.remove("rem-btn");
+
+}
+        </script>
+        </div>
+</body>
+</html>

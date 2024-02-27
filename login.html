@@ -29,7 +29,7 @@
             Login To Make Your Experience Better!
             </div>
     <button id="log" onclick="openlogin()" class="btn">LOG IN</button>
-        <div class="login" id="signin">
+        <div class="login" id="login1">
             <br>
             <br>
             <form>
@@ -53,6 +53,7 @@
     </div>
         <script>
             let log = document.getElementById("log");
+            let login1=document.getElementById("login1")
 function openlogin()
 {
     signin.classList.add("open-login");
@@ -60,7 +61,7 @@ function openlogin()
 }
 function closelogin()
 {
-    signin.classList.remove("open-login");
+    login1.classList.remove("open-login");
     log.classList.remove("rem-btn");
 }
         </script>

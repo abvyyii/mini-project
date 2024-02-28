@@ -25,15 +25,38 @@
         ConfessionBox
         <p>
             <form>
-        <textarea placeholder="Confession..." class="confess">
+        <textarea placeholder="Confession..." class="confess" id="confess">
         </textarea>
         </p>
+        <button type="button" class="b" onclick="bolder()" ondblclick="normB()">B</button>
+        <button type="button" class="i" onclick="italicz()" ondblclick="normI()">I</button>
+        <br>
         <button type="reset" class="SUB">SUBMIT>></button>
         </div>
     </form>
         
         
 </body>
+<script>
+    let confess=document.getElementById("confess");
+    function bolder()
+    {
+        confess.classList.add("Bold-on");
+
+    }
+    function italicz()
+    {
+        confess.classList.add("italic-on");
+    }
+    function normB()
+    {
+        confess.classList.remove("Bold-on");
+    }
+    function normI()
+    {
+        confess.classList.remove("italic-on");
+    }
+</script>
 
 </html>
 

@@ -249,3 +249,25 @@ font-weight: bolder;
     color: #ffffff;
     font-size: 16px;
 }
+.b{
+    height: 20px;
+    width: 20px;
+    font-weight: Bold;
+    border-color: #000;
+    background-color: white;
+}
+.i
+{
+    height: 20px;
+    width: 20px;
+    font-style: italic;
+    border-color: #000;
+    background-color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.Bold-on{
+    font-weight: bolder;
+}
+.italic-on{
+font-style: italic;
+}

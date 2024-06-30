@@ -144,6 +144,21 @@ nav ul li a:hover{
     backdrop-filter: blur(10px);
 
 }
+.signin{
+    height:475px;
+    width:400px;
+    top: 0;
+    margin-left: auto;
+    border-radius: 50px;
+    background-color:rgba(255,255,255, 0.2);
+    transform:translate(-50%,-50%) scale(0.1);
+    visibility:hidden;
+    transition: 0.1s, top 0.1s ease ;
+    color:white;
+    border:2px solid rgba(255, 255,255, 0.2);
+    position: relative;
+    backdrop-filter: blur(10px);
+}
 
 .open-login
 {
@@ -167,6 +182,16 @@ nav ul li a:hover{
     color:white;
 }
 .login input::placeholder{
+    color:white;
+    font-size: 11px;
+}
+.signin input{
+    background:transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: 10px;
+    color:white;
+}
+.signin input::placeholder{
     color:white;
     font-size: 11px;
 }

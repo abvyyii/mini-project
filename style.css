@@ -20,7 +20,6 @@ body{
     font-weight: bolder;
     text-align: center;
     font-size: 40px;
-    opacity: 60%;
 }
 nav{
     background-color: #000;
@@ -124,8 +123,8 @@ nav ul li a:hover{
 .logcontainer{
     text-align: center;
     max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .login
@@ -135,12 +134,14 @@ nav ul li a:hover{
     top: 0;
     margin-left: auto;
     border-radius: 50px;
-    background-color: #000;
+    background-color:rgba(255,255,255, 0.2);
     transform:translate(-50%,-50%) scale(0.1);
     visibility:hidden;
-    transition: transform 0.1s, top 0.1s ease ;
+    transition: 0.1s, top 0.1s ease ;
     color:white;
-    border-color: white;
+    border:2px solid rgba(255, 255,255, 0.2);
+    position: relative;
+    backdrop-filter: blur(10px);
 
 }
 
@@ -159,34 +160,45 @@ nav ul li a:hover{
     margin-top: 175px;
     margin-left: 675px;
 }
+.login input{
+    background:transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: 10px;
+    color:white;
+}
+.login input::placeholder{
+    color:white;
+    font-size: 11px;
+}
 .btn
 {
     margin-top: 200px;
     height:50px;
     width: 100px;
     border-radius: 5px;
-    background-color: rgb(0, 0, 0);
+    background-color:rgba(255, 255, 255, 0.2);
+    border:1px solid rgba(255, 255, 255, 0.2);
     color: #ffffff;
     font-weight: bolder;
     opacity: 70%;
 }
 .btn:hover{
     border-radius: 10px;
-    background-color: #000;
-    color: white;
+    background-color:rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
     transition: all .5s;
     opacity: 100%;
     
 }
 .p1{
     margin-left: 10px;
-    color:rgb(151, 76, 255);
+    color:rgb(255, 255, 255);
     opacity: 100%;
     text-align: left;
 }
 .p2{
     margin-left: 10px;
-    color:rgb(151, 76, 255);
+    color:rgb(255, 255, 255);
     opacity: 100%;
     text-align: left;
 
@@ -195,19 +207,19 @@ nav ul li a:hover{
     height: 40px;
     width: 380px;
     border-radius: 10px;
-    border-color: black;
-    border-width:  5px;
+    border:2px solid rgba(255,255,255.0.2);
     opacity: 100%;
 }
 .mbtn{
-height:30px;
-width: 60px;
-border-radius: 5px;
-border-color:rgb(149, 0, 255);
-background-color:black ;
-border-width:  3px;
+height:50px;
+width: 100%;
+border-radius: 40px;
+border-color:rgba(255, 255, 255, 0.2);
+background:transparent;
+border-width:  1px;
 color: white;
 font-weight: bolder;
+font-size:16px;
 }
 .top{
     text-decoration: none;

@@ -47,14 +47,15 @@
             <br>
             <button type="reset" class="mbtn">Log In</button>
             <br>
+            <br>
             <button type="button" class="mbtn" onclick="closelogin()">Close</button>
         </form>
         </div>
     </div>
         <script>
             let log = document.getElementById("log");
-            let login1=document.getElementById("login1")
-function openlogin()
+            let login1=document.getElementById("login1");
+            function openlogin()
 {
     login1.classList.add("open-login");
     log.classList.add("rem-btn");
@@ -64,6 +65,8 @@ function closelogin()
     login1.classList.remove("open-login");
     log.classList.remove("rem-btn");
 }
+
+
         </script>
         </div>
 </body>
